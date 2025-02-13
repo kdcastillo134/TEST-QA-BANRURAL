@@ -2,7 +2,7 @@ error: let randomNumber = Math.random() * 10; // Segun las reglas del juego, se 
 error: const ATTEMPS = 5; // Segun las reglas del juego, el usuario tiene 10 intentos para adivinar el numero
 error: const lowOrHi = document.querySelector('lowOrHi'); // Se necesitaba el punto para nombrar a la clase lowOrHi
 error: if(userGuess === randomNumber)  // En esta linea se comparaba un dato string con un dato number, por lo que se convirtio userGuess a number cuando se ingresa del campo guessField a la variable: let userGuess = Number(guessField.value);
-Ademas, habia un problema con la condicion porque indicaba que si el numero ingresado por el usuario y el numero generado automaticamente coincidian el usuario perdia un intento, lo cual no es correcto. Tambien se cambio el color de los mensajes de ganar a verde y de incorrecto a rojo para no confundir al usuario en el mensaje.:
+Ademas, habia un problema con la condicion porque indicaba que si el numero ingresado por el usuario y el numero generado automaticamente coincidian el usuario perdia un intento, lo cual no es correcto. Tambien se cambio el color de los mensajes de "Felicidades" a verde, de "Incorrecto" a negro, y de "perdiste" a rojo. 
     if(userGuess === randomNumber) { 
       lastResult.textContent = 'Felicitaciones! adivinaste el número!';
       lastResult.style.backgroundColor = 'green';
